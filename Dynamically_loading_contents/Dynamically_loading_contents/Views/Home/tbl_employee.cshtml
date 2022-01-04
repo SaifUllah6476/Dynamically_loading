@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Dynamically_loading_contents.Models.tbl_employee>
+
+<div class="container">
+    <h4 style="text-align:center">  Employee Details</h4>
+
+    @foreach (var item in Model)
+    {
+        <p><label>Name:</label>@item.emp_name</p>
+        <p><label>Email:</label>@item.emp_email</p>
+        <p><label>Contact:</label>@item.emp_contact</p>
+        <p><label>Experience:</label>@item.emp_exp</p>
+    }
+
+
+</div>
+
+
